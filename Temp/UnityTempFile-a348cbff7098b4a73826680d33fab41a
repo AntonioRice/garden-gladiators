@@ -44,6 +44,8 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
+'Assets/FadeIn.cs'
 'Assets/Scripts/LevelManager.cs'
+'Assets/Scripts/MusicManager.cs'
 -r:'/Applications/Unity 4.6/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity 4.6/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
