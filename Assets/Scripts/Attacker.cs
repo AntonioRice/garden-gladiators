@@ -8,7 +8,8 @@ public class Attacker : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Rigidbody2D myRigidBody = gameObject.AddComponent<Rigidbody2D>();
+		myRigidBody.isKinematic = true;
 	}
 	
 	// Update is called once per frame
