@@ -16,4 +16,8 @@ public class Attacker : MonoBehaviour {
 	void Update () {
 		transform.Translate (Vector3.left * walkSpeed * Time.deltaTime);
 	}
+
+	void onTriggerEnter2D () {
+		Debug.Log (name + " trigger enter.");
+	}
 }
