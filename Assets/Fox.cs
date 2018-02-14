@@ -27,9 +27,10 @@ public class Fox : MonoBehaviour {
 		}
 
 		if (obj.GetComponent<Stone>()) {
+			anim.SetBool ("isAttacking", true);
 			anim.SetTrigger("jump trigger");
 		} else {
-			attacker.attack (obj);
+			attacker.Attack (obj);
 		}
 
 		Debug.Log("Fox collided with " + collider);
