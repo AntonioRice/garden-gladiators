@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent (typeof (Rigidbody2D))]
 public class Attacker : MonoBehaviour {
 
+	private Health health;
+
 	private float currentSpeed;
 	private GameObject currentTarget;
 
