@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	public float health;
+	public float health = 100f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,5 +13,9 @@ public class Health : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void DealDamage (float damage) {
+		health -= damage;
 	}
 }
