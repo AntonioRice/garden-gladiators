@@ -4,8 +4,6 @@ using System.Collections;
 [RequireComponent (typeof (Rigidbody2D))]
 public class Attacker : MonoBehaviour {
 
-	private Health health;
-
 	private float currentSpeed;
 	private GameObject currentTarget;
 
@@ -27,7 +25,12 @@ public class Attacker : MonoBehaviour {
 	}
 
 	public void StrikeCurrentTarget (float damage) {
-		Debug.Log("Dealt " + damage + " damage!");
+		if (currentTarget) {
+			Health health = currentTarget.GetComponent<Health>();
+			if (health) {
+				health.DealDamage(damage);
+			}
+		}
 	}
 
 	public void Attack (GameObject obj) {
